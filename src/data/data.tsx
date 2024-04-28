@@ -1,17 +1,17 @@
 import {
-  AcademicCapIcon,
+  // AcademicCapIcon,
   ArrowDownTrayIcon,
-  BuildingOffice2Icon,
-  CalendarIcon,
+  // BuildingOffice2Icon,
+  // CalendarIcon,
   FlagIcon,
   MapIcon,
-  SparklesIcon,
+  // SparklesIcon,
 } from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
+// import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
@@ -69,24 +69,23 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `Hi, I'm Ryan`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+      I have a strong interest in <strong className="text-stone-100"> cybersecurity, software engineering, and artificial intelligence</strong>. 
+      I obtained an <strong className="text-stone-100">MSc in Cybersecurity and AI</strong> from the University of Sheffield, UK. My final dissertation was in Machine Learning, Digital Image Processing, and Computer Vision.
       </p>
+
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+      I have experience working as a <strong className="text-stone-100"> Mobile Software Engineer </strong> for an education-technology startup, where I focused on making the learning process more engaging.
       </p>
     </>
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
+      // href: '/assets/resume.pdf',
+      href: 'https://drive.google.com/file/d/1C01zLRAJxKBGPnQD3sfeCp-pFiCZmA1c/view?usp=sharing',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -104,16 +103,15 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `I have a strong interest in cybersecurity, software engineering, and artificial intelligence. During my time in college, I developed combined AI and image processing applications. I obtained an MSc in Cybersecurity and AI from the University of Sheffield, UK. My final dissertation was in Machine Learning, Digital Image Processing, and Computer Vision. The MSc programme was fully funded by LPDP.
+  In addition, I have experience working as a Mobile Application Engineer for an education-technology startup, where I focused on making the learning process more engaging. I am always eager to learn and improve my skills.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Location', text: 'Jakarta, Indonesia', Icon: MapIcon},
+    // {label: 'Age', text: '29', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'Indonesian', Icon: FlagIcon},
+    // {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
+    // {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
+    // {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -125,50 +123,34 @@ export const skills: SkillGroup[] = [
     name: 'Spoken languages',
     skills: [
       {
-        name: 'English',
+        name: 'Indonesian',
         level: 10,
       },
       {
-        name: 'French',
-        level: 4,
+        name: 'English',
+        level: 8,
       },
-      {
-        name: 'Spanish',
-        level: 3,
-      },
+
     ],
   },
   {
     name: 'Frontend development',
     skills: [
       {
-        name: 'React',
-        level: 9,
+        name: 'React.js',
+        level: 7,
       },
       {
-        name: 'Typescript',
+        name: 'Electron',
         level: 7,
+      },
+      {
+        name: 'Laravel',
+        level: 6,
       },
       {
         name: 'GraphQL',
         level: 6,
-      },
-    ],
-  },
-  {
-    name: 'Backend development',
-    skills: [
-      {
-        name: 'Node.js',
-        level: 8,
-      },
-      {
-        name: 'Rust',
-        level: 5,
-      },
-      {
-        name: 'Golang',
-        level: 4,
       },
     ],
   },
@@ -180,12 +162,41 @@ export const skills: SkillGroup[] = [
         level: 9,
       },
       {
-        name: 'Flutter',
-        level: 4,
+        name: 'Android',
+        level: 8,
+      },
+      {
+        name: 'XCode',
+        level: 8,
+      },
+    ],
+  },
+  {
+    name: 'Programming Languages',
+    skills: [
+      {
+        name: 'Python',
+        level: 8,
+      },
+      {
+        name: 'Javascript',
+        level: 8,
+      },
+      {
+        name: 'Typescript',
+        level: 8,
+      },
+      {
+        name: 'Java',
+        level: 7,
       },
       {
         name: 'Swift',
-        level: 3,
+        level: 5,
+      },
+      {
+        name: 'Obj C',
+        level: 5,
       },
     ],
   },
@@ -268,40 +279,65 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
+    date: 'November 2023',
+    location: 'University of Sheffield',
+    title: 'MSc in Cybersecurity and Artificial Intelligence',
     content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
+    date: 'June 2019',
+    location: 'Bogor Agricultural University',
+    title: 'BSc in Computer Science',
     content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'August 2019 - June 2022',
+    location: 'PT Pahami Cipta Edukasi (Pahamify) - Bogor, Indonesia',
+    title: 'Mobile Software Engineer',
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
+      <>
+      <ul>
+        <li>•	Building mobile apps using React Native both for Android and IOS.</li>
+        <li>•	Building desktop apps using React JS and wrapped by Electron.</li>
+        <li>•	Building Skillify a professional learning platform using ReactJS.</li>
+
+        <li>•	Using GraphQL to communicate data from the server to mobile and desktop apps.</li>
+        <li>•	Implementing Redux for react state management.</li>
+        <li>•	Apple Fairplay for Digital Right Management to encrypt videos.</li>
+        <li>•	Implement IOS core data for downloaded video metadata management.</li>
+
+      </ul>
+      </>
+      
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'September 2018 - May 2019',
+    location: 'Bogor Agricultural University - Bogor, Indonesia',
+    title: 'Laboratory Teaching Assistant',
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
+      <>
+      <ul>
+        <li>•	Assisting students in laboratory sessions on Information Systems, Object Oriented System Development, Software Engineering and Digital Image Processing.</li>
+        <li>•	Delivering the module materials and assisting them to do a lab exercise.</li>
+      </ul>
+      </>
+    ),
+  },
+  {
+    date: 'July 2018 - September 2018',
+    location: 'Asosiasi Asuransi Jiwa Indonesia (AAJI) - Jakarta, Indonesia',
+    title: 'Software Engineer Intern',
+    content: (
+      <>
+      <ul>
+        <li>•	Developing an inventory system for internal management.</li>
+        <li>•	Developed using Visual Studio 2017.</li>
+      </ul>
+      </>
     ),
   },
 ];
@@ -336,27 +372,27 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: 'Please reach out via the platform that you find most convenient.',
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'azrian.ryan@gmail.com',
+      href: 'mailto:azrian.ryan@gmail.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      text: 'Jakarta, Indonesia',
+      href: '#',
     },
     {
       type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      text: '@ryanazrian',
+      href: 'https://www.instagram.com/ryanazrian/',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'ryanazrian',
+      href: 'https://github.com/ryanazrian',
     },
   ],
 };
@@ -365,9 +401,8 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/ryanazrian'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/ryanazrian/'},
+  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/ryanazrian'},
+  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/Ryan_azrian'},
 ];
