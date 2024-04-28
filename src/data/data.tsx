@@ -45,7 +45,7 @@ import {
  */
 export const homePageMeta: HomepageMeta = {
   title: `Ryan Syach's Resume`,
-  description: "Ryan Syach's Digital Resume",
+  description: "Ryan Syach's Digital Resumes",
 };
 
 /**
