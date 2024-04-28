@@ -35,6 +35,12 @@ const ContactForm: FC = memo(() => {
       /**
        * This is a good starting point to wire up your form submission logic
        * */
+      const {name, message} = data
+
+      const mail = document.createElement("a");
+      mail.href = `mailto:azrian.ryan@gmail.com?subject=Hi I am ${name}&body=${message}`;
+      mail.click();
+
       console.log('Data to send: ', data);
     },
     [data],
