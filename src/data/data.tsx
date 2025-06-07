@@ -103,8 +103,25 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `I have a strong interest in cybersecurity, software engineering, and artificial intelligence. During my time in college, I developed combined AI and image processing applications. I obtained an MSc in Cybersecurity and AI from the University of Sheffield, UK. My final dissertation was in Machine Learning, Digital Image Processing, and Computer Vision. The MSc programme was fully funded by LPDP.
-  In addition, I have experience working as a Mobile Application Engineer for an education-technology startup, where I focused on making the learning process more engaging. I am always eager to learn and improve my skills.`,
+  description: (
+  <>
+  <p>
+    Ryan is a Senior Software Engineer with a comprehensive background across Frontend, Backend, Mobile, and AI solutions. He brings hands-on expertise in modern frameworks such as ReactJS, React Native, NextJS, and native iOS development using Swift. His technical scope includes fullstack development — from scalable backends using NestJS to user-friendly frontends with Laravel and Vue.js.
+  </p>
+
+  <p>
+    He has designed and delivered advanced AI-powered solutions using AWS Bedrock (Nova model), covering text generation, image processing, and data extraction use cases. These solutions were built end-to-end, fully integrated across the stack.
+  </p>
+
+  <p>
+    Beyond coding, Ryan has solid experience in project management, containerized deployments with Docker, and relational database design and optimization using MySQL. He is passionate about building systems that are not only technically sound but also aligned with business goals and user needs.
+  </p>
+
+  <p>
+    Ryan holds a Master’s degree in Cybersecurity and Artificial Intelligence from The University of Sheffield, which strengthens his ability to design secure, intelligent systems in today’s evolving tech landscape.
+  </p>
+  </>
+  ),
   aboutItems: [
     {label: 'Location', text: 'Jakarta, Indonesia', Icon: MapIcon},
     // {label: 'Age', text: '29', Icon: CalendarIcon},
@@ -134,10 +151,22 @@ export const skills: SkillGroup[] = [
     ],
   },
   {
-    name: 'Frontend development',
+    name: 'FE and BE development',
     skills: [
       {
         name: 'React.js',
+        level: 7,
+      },
+      {
+        name: 'Next.js',
+        level: 7,
+      },
+      {
+        name: 'Node.js',
+        level: 7,
+      },
+      {
+        name: 'Flask',
         level: 7,
       },
       {
@@ -282,17 +311,50 @@ export const education: TimelineItem[] = [
     date: 'November 2023',
     location: 'University of Sheffield',
     title: 'MSc in Cybersecurity and Artificial Intelligence',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    content: <p></p>,
   },
   {
     date: 'June 2019',
     location: 'Bogor Agricultural University',
     title: 'BSc in Computer Science',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    content: <p></p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
+  {
+    date: 'June 2024 – May 2025',
+    location: 'Wistkey',
+    title: 'Senior Analyst Progammer',
+    content: (
+      <>
+      <ul>
+        <li>•	Full-Stack Expertise Across Sectors: Delivered impactful solutions in e-commerce, finance, and sustainability by integrating frontend, backend, mobile, and AI technologies.</li>
+        <li>•	Social Commerce Innovation: Led development of a TikTok-style shopping app for SoSoMall using React Native, successfully launching on both iOS and Android.</li>
+        <li>•	Platform Enhancement at Storeberry: Improved iOS POS (Swift), POS web (Laravel + Vue.js), mobile Eshop (React Native), and e-commerce site (Next.js), and initiated a Generative AI project with AWS Bedrock to automate product content.</li>
+        <li>•	Mobile Stability at MoneyHero: Supported the ongoing enhancement and maintenance of a leading finance app in Asia, focusing on performance and reliability.</li>
+        <li>•	Sustainability Tech with GreenHoop: Collaborated with Fujitsu Hong Kong to enhance a zero-waste app and dashboard using React Native and React.js, promoting environmental engagement.</li>
+      </ul>
+      </>
+      
+    ),
+  },
+  {
+    date: 'June 2024 – October 2024',
+    location: 'LMITD IPB University',
+    title: 'Machine Learning Engineer',
+    content: (
+      <>
+      <ul>
+        <li>•	Building a face detection and blurring system using Azure Cognitive Vision.</li>
+        <li>•	Building Clustering Online Attendance Locations by extracting precise room locations from online attendance data, enhancing spatial accuracy for university operations. (K-Means).</li>
+        <li>•	Building Document Search Optimisation by enhancing an existing document search system powered by LLMs using LLAMA embeddings. Transitioned the database backend from Pinecone to ChromaDB to align with the institution's preference for fully in-house tools.</li>
+        <li>•	Built data collection pipelines using Selenium to scrape job listings from LinkedIn and JobStreet, enabling the creation of a robust job recommendation system.</li>
+      </ul>
+      </>
+      
+    ),
+  },
   {
     date: 'August 2019 - June 2022',
     location: 'PT Pahami Cipta Edukasi (Pahamify) - Bogor, Indonesia',
